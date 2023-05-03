@@ -105,5 +105,23 @@ public class iniciadoJavaJedi {
             memoria la suma entre estas dos multiplicaciones ¿Que resultado le da? ¿Entero o
             real? ¿Por qué?
          */
+
+         double numReal1 = 3.5;
+         double numReal2 = 8.45;
+         int numEntero1 = 9;
+         int numEntero2 = 5;
+
+         double multiReal = numReal1 * numReal2;
+         int multiEntero = numEntero1 * numEntero2;
+
+         double sumaRE = multiReal + multiEntero; 
+
+         System.out.println("Ejercicio 7");
+         
+         System.out.println("El resultado de la suma de las dos multiplicaciones es " + sumaRE + " y es un Real ");
+         System.out.println("Al sumar un número entero con un número real, el resultado siempre será un número real. Esto se debe a que los números reales pueden representar números decimales o fraccionarios, mientras que los números enteros solo pueden representar números enteros");
+
+
+
     }
 }
