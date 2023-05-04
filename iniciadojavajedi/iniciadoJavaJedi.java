@@ -68,6 +68,8 @@ public class iniciadoJavaJedi {
 
         System.out.println("Ejercicio 4");
 
+        System.out.println("El resultado de la suma es: " + suma3);
+
         System.out.println("El numero, " + nu1 + divisivilidad + " por " + nu2);
 
         /*Ejercicio 5
@@ -121,7 +123,59 @@ public class iniciadoJavaJedi {
          System.out.println("El resultado de la suma de las dos multiplicaciones es " + sumaRE + " y es un Real ");
          System.out.println("Al sumar un número entero con un número real, el resultado siempre será un número real. Esto se debe a que los números reales pueden representar números decimales o fraccionarios, mientras que los números enteros solo pueden representar números enteros");
 
+        /*Ejercicio 8
+         * Mi nombre y edad: Se le solicita que guarde en un espacio de memoria su nombre
+         y apellido, luego guarde su edad e imprimalos por pantalla.
+         El mensaje debe tener el siguiente formato:
+         “Mi nombre es “ {Nombre}
+         “Mi edad es” {Edad}
+         */
 
+        String nombreApellido = "Marcos Martin";
 
+        int edad = 39; 
+
+        System.out.println("Ejercicio 8");
+
+        System.out.println("Mi nombre es " + nombreApellido);
+
+        System.out.println("Mi edad es " + edad);
+
+        /*Ejercicio 9
+         * Potencia de 2 y 3: Se le solicita que guarde en un espacio de memoria un número y
+         luego haga la potencia de ese número al cuadrado y al cubo.
+         */
+
+        double numPotencia = 3.5; 
+
+        double alCuadrado = numPotencia * numPotencia; 
+
+        double alCubo = numPotencia * numPotencia * numPotencia;
+
+        System.out.println("Ejercicio 9");
+
+        System.out.println("3.5 al cuadrado es: " + alCuadrado);
+
+        System.out.println("3.5 al cubo es: " + alCubo);
+
+        /*Ejercicio 10
+         * Acumulador: Se le solicita que guarde en un espacio de memoria la acumulación
+         de quince multiplicaciones entre dos números enteros divididos por el número de la
+         multiplicación. Por ejemplo:
+         Numero1*Numero2/1 + Numero1*Numero2/2 + … + Numero1*Numero2/15
+         El resultado mostrarlo por pantalla.
+         */
+      
+         int numero1 = 6; 
+         int numero2 = 10; 
+         double acumulador = 0.0;
+         for (int i = 1; i <= 15; i++) {
+            double multiplicacion = numero1 * numero2;
+            double division = multiplicacion / i;
+            acumulador += division;
+         }
+         System.out.println("Ejercicio 10");
+
+         System.out.println("La acumulación es: " + acumulador);
     }
 }
